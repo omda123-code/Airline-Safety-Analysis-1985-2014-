@@ -1,26 +1,26 @@
 # Airline Safety Analysis (1985–2014)
 
-## Project Overview
+## Project Overview :
 This project analyzes airline safety data to compare changes in fatality rates across different airlines over two periods: 1985–1999 and 2000–2014. It highlights which airlines improved or got worse, and includes a simple model to predict risk.
 
-## Dataset
+## Dataset :
 - **Source**: FiveThirtyEight’s “airline-safety.csv” dataset.
 - **Contents**: Safety records (incidents, fatal accidents, fatalities) and seat-kilometers for ~50 airlines.
 - **Direct link to raw CSV**: [airline-safety.csv](https://raw.githubusercontent.com/fivethirtyeight/data/master/airline-safety/airline-safety.csv)
 
-## Steps & Methodology
+## Steps & Methodology :
 
-1. **Data Loading & Cleaning**  
+1. **Data Loading & Cleaning** :
    - Renamed columns for clarity.  
    - Ensured correct numeric types.  
 
-2. **Feature Engineering**  
+2. **Feature Engineering** :
    - Scaled seat-km to billions for readability.  
    - Calculated incident and fatality **rates per billion seat-km** for each period.  
    - Calculated **changes** between the two periods.  
    - Created a binary variable: `had_fatal_0014` to indicate if an airline had any fatal accidents in 2000–2014.
 
-3. **Exploratory Data Analysis (EDA)**  
+3. **Exploratory Data Analysis (EDA)** :
    - **Top 10 airlines by fatality rate** (2000–2014): Visualized those with highest fatalities per billion seat-km.  
    - **Change in fatality rates**: Visualized improvements (negative change) and worsening (positive change) trends between the two periods.
      
